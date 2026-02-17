@@ -740,3 +740,78 @@ body {
         transform: translateX(20px) rotate(360deg);
     }
 }
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+   ========================================= */
+@media screen and (max-width: 768px) {
+
+    /* 1. Reduce Title Size */
+    .title {
+        font-size: 1.5rem !important;
+        /* Smaller on mobile */
+    }
+
+    /* 2. Hide Gnomes (Simplify Animation) */
+    .gnome {
+        display: none !important;
+    }
+
+    /* Adjust cards start position since no gnomes pushing */
+    .photo-wrapper.left {
+        transform: translateX(-150px);
+    }
+
+    .photo-wrapper.right {
+        transform: translateX(150px);
+    }
+
+    .enter-stage .photo-wrapper.left {
+        transform: translateX(-60px);
+    }
+
+    .enter-stage .photo-wrapper.right {
+        transform: translateX(60px);
+    }
+
+    /* Scale down fusion container to fit "1 pandang" */
+    .fusion-container {
+        transform: scale(0.8);
+    }
+
+    /* 3. Reduce Result Section Size */
+    .final-photo-wrapper {
+        width: 180px;
+        /* Smaller circle (was 250px) */
+        height: 180px;
+        margin-bottom: 15px;
+    }
+
+    .romantic-text {
+        font-size: 1rem !important;
+        /* Smaller text */
+        margin-bottom: 10px !important;
+    }
+
+    .message-container {
+        width: 90vw;
+        padding: 5px 15px;
+        /* Tighter padding */
+        min-height: 180px;
+    }
+
+    .message-container p {
+        font-size: 0.8rem;
+        /* Slightly smaller reading text */
+        line-height: 1.35 !important;
+    }
+
+    /* Adjust retro elements size on mobile */
+    .game-item {
+        font-size: 1.5rem;
+    }
+
+    .cloud-1 {
+        font-size: 3rem;
+    }
+}
