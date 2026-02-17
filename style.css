@@ -5,17 +5,29 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* LOCK SCROLL GLOBALLY */
+    overscroll-behavior: none;
+    /* Prevent rubber-banding on mobile */
+    touch-action: none;
+    /* Disable touch gestures like scrolling */
+}
+
 body {
     background: linear-gradient(180deg, #000000 0%, #1a1a2e 50%, #16213e 100%);
     /* classic arcade space dark */
     font-family: 'Press Start 2P', cursive;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     image-rendering: pixelated;
     color: #fff;
+    position: fixed;
+    /* Force fix to viewport to prevent any shift */
 }
 
 .container {
@@ -366,10 +378,15 @@ body {
     }
 }
 
-/* Result Screen */
+/* Result Screen Animation & Interaction */
+#result-screen {
+    touch-action: auto;
+    /* Re-enable touch for scrolling message */
+}
+
 .result-content {
     animation: pop-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s backwards;
-    /* Delay pop-in to happen after flash has started fading */
+    /* Restored animation */
 }
 
 .final-photo-wrapper {
@@ -382,6 +399,7 @@ body {
     border: 8px solid white;
     box-shadow: 0 10px 40px rgba(214, 51, 108, 0.5);
     position: relative;
+    z-index: 5;
 }
 
 .final-photo {
@@ -755,18 +773,7 @@ body {
     /* 2. SHOW Gnomes (Re-enabled) */
     .gnome {
         display: block !important;
-        font-size: 2rem;
-        /* Smaller gnomes */
-    }
-
-    .left-gnome {
-        left: -40px;
-        /* Adjusted position */
-    }
-
-    .right-gnome {
-        right: -40px;
-        /* Adjusted position */
+        /* Matches desktop */
     }
 
     /* Adjust cards start position */
