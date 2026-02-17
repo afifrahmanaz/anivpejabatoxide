@@ -752,15 +752,28 @@ body {
         /* Smaller on mobile */
     }
 
-    /* 2. Hide Gnomes (Simplify Animation) */
+    /* 2. SHOW Gnomes (Re-enabled) */
     .gnome {
-        display: none !important;
+        display: block !important;
+        font-size: 2rem;
+        /* Smaller gnomes */
     }
 
-    /* Adjust cards start position since no gnomes pushing */
+    .left-gnome {
+        left: -40px;
+        /* Adjusted position */
+    }
+
+    .right-gnome {
+        right: -40px;
+        /* Adjusted position */
+    }
+
+    /* Adjust cards start position */
     .photo-wrapper.left {
         transform: translateX(-150px);
     }
+
 
     .photo-wrapper.right {
         transform: translateX(150px);
