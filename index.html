@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Retro Background Elements -->
+    <div class="retro-layer">
+        <div class="game-item tetris-1">🟪</div> <!-- T shape -->
+        <div class="game-item tetris-2">🟧</div> <!-- L shape -->
+        <div class="game-item tetris-3">🟦</div> <!-- J shape -->
+        <div class="game-item invader-1">👾</div>
+        <div class="game-item invader-2">👾</div>
+        <div class="game-item pacman-chase">
+            <span class="pacman">ᗧ</span>
+            <span class="dot">·</span>
+            <span class="dot">·</span>
+            <span class="dot">·</span> <!-- Added another dot to replace ghost -->
+        </div>
+        <div class="game-item flappy">🐦</div>
+        <div class="game-item cloud-1">☁️</div>
+        <div class="game-item cloud-2">☁️</div>
+        <div class="game-item coin-box">🪙</div> <!-- New Element -->
+    </div>
+
+    <div class="container">
+        <!-- Stage 1: Start Button -->
+        <div id="start-screen" class="screen">
+            <h1 class="title">LEVEL 1<br>ANNIVERSARY</h1>
+            <p class="subtitle">Ready Player One?</p>
+            <button id="start-btn" class="pulse-btn">PRESS START</button>
+        </div>
+
+        <!-- Stage 2: Animation Area -->
+        <div id="animation-screen" class="screen hidden">
+            <div class="fusion-container">
+                <div class="fusion-spinner">
+                    <div class="photo-wrapper left">
+                        <img src="images/afif.jpeg" alt="Afif" class="photo">
+                        <div class="gnome left-gnome">🧚‍♂️</div>
+                    </div>
+                    <div class="photo-wrapper right">
+                        <img src="images/uti.jpeg" alt="Uti" class="photo">
+                        <div class="gnome right-gnome">🧚‍♀️</div>
+                    </div>
+                </div>
+                <!-- Fusion Effect Elements -->
+                <div class="fusion-core"></div>
+            </div>
+        </div>
+
+        <!-- Flash Effect (Global) -->
+        <div class="fusion-flash"></div>
+
+        <!-- Stage 3: Result -->
+        <div id="result-screen" class="screen hidden">
+            <div class="result-content">
+                <div class="final-photo-wrapper">
+                    <img src="images/bareng.jpeg" alt="Together" class="final-photo">
+                    <div class="floating-hearts">
+                        <span>⭐</span><span>🍄</span><span>❤️</span><span>🎮</span>
+                    </div>
+                </div>
+                <h1 class="romantic-text">Happy Anniversary Sayang!</h1>
+                <div class="message-container">
+                    <p>sayang, maafiin aku ya. aku sadar aku banyak salah. aku sadar aku banyak nyakitin kamu. aku sadar
+                        aku tidak seharusnya berperilaku buruk.</p>
+
+                    <p>alhamdulillah, terimakasih aku ucapkan ke kamu. mungkin singkat 3 hari kita ga ngechat intens,
+                        walaupun masih ada chat, tapi aku sangat kangen sama kamu. kamu ga kangen ya sama aku?</p>
+
+                    <p>aku ngerasa kamu lebih happy tanpa aku sih yang, hehe. tapi akuu tetap sayang kamu. kalau kamu
+                        rasa dalam 3 hari ini aku emang membawa pengaruh buruk ke kamu, aku minta maaf yaa. aku bakal
+                        perbaiki, aku mau perbaiki, aku menyesal atas segala sesuatu yg aku lakukan yg buruk".</p>
+
+                    <p>sayang, sejujurnya kamu membawa warna didalam hidupku. kamu mungkin salah satu orang atau peran
+                        besar aku untuk aku bisa lebih jauh memandang hidup. aku punya target hidup yg bikin aku
+                        semangat. belum sama kamu mungkin aku bakal jadi org yg menjalani hidup tanpa punya semangat
+                        atau value yg aku ingin capai.</p>
+
+                    <p>terimakasih selama 1 tahun ini aku bisa belajar banyak hal dari kamu. kamu bisa belajar apa yg
+                        benar dan apa yg salah, apa yg seharusnya aku lakukan, apa yg seharusnya tidak aku lakukan.</p>
+
+                    <p>aku senang mengenal dirimu sayang. mungkin ada rasa bimbang, ada rasa bingung, ada rasa byk
+                        banget rasa bersalah ke kamuu. aku pengen banget minta ampunn, aku salah. tidak akan aku lakukan
+                        lagiii, aku benci melakukannya.</p>
+
+                    <p>kadang rasa bersalah itu seakan" kita arah jalannya mulai salah. makanya 3 hari yg lewat ini kita
+                        reset; kamu bener manfaatkan dengan baik" dan aku juga manfaatkan dengan baik". kita perbaiki
+                        diri kita masing, dan saat ramadhan ini banyak" minta ampun beribadah supaya dosa kita bisa
+                        diampuni.</p>
+
+                    <p>sayang, aku berharap kita akan terus bersama. semoga jalan kita dipertemukan dan semoga jalan
+                        kita dipermudah untuk menjadi insan yg baik. sehat selalu sayangku, semangat menjalani hidup.
+                        semoga banyak hal" baik yg menemui kita kedepannya. aamiin.</p>
+
+                    <p>aku sayang kamu, i love you sayangku ❤️</p>
+
+                    <p class="closing"><span>from afif yg ga dikangenin</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element (Optional, can replace source if user provides one) -->
+    <!-- <audio id="bg-music" src="assets/music.mp3"></audio> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
